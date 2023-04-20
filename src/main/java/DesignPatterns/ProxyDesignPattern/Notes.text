@@ -1,0 +1,17 @@
+
+
+Client call the real object vai a proxy.
+instead of calling the object directly.
+
+UseCase.
+
+1) Proxy Can block request : accessRestriction, Can be used for accessControl also. who has certain permission
+2) Proxy can cache data also : caching
+3) PreProcessing / PostProcessing
+4) can be used to encapsulate request. mashelling / unmashelling
+
+
+
+1. any accessControl is related to proxy
+2. caching
+

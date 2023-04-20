@@ -1,0 +1,44 @@
+https://leetcode.com/discuss/interview-question/object-oriented-design/1320604/Book-My-Show-or-Low-Level-Design
+
+
+Requirements ::
+
+
+User : userName , loginDetails, Permissions
+
+user functions : Create account / login , Search Movie , Select Theater, See Seating arrangements , Book Tickets, make Payments
+
+Movie : title , ScreeTime , description , cast
+
+Show : startTime , endTIme , Movie
+
+Theater : name , List<Halls>
+
+Hall : List<Shows> , List<Seats>
+
+Seats : SeatCategory, Status
+
+SeatCategory: PLATINUM , GOLD
+
+Status  : Booked, Reserved, AVAILABLE, BLOCKED
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

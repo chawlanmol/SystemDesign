@@ -1,0 +1,12 @@
+
+** used for push notification where observable can notify the observers on state change
+
+IObservable
+
+1. add
+2. remove
+3. notify()
+
+
+IObserver
+1. Update()

@@ -1,0 +1,8 @@
+
+Helps in encapsulating the request.
+
+request has the receiver. and it can perform some action
+Invoker doesnt have to know the receiver all it cares about is the request it can make( and request knows the receiver)
+
+
+

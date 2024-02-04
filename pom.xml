@@ -28,6 +28,11 @@
             <version>1.18.24</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>com.signalfx.public</groupId>
+            <artifactId>signalfx-codahale</artifactId>
+            <version>1.0.23</version>
+        </dependency>
     </dependencies>
 
 

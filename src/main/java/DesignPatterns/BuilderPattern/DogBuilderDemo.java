@@ -9,7 +9,6 @@ public class DogBuilderDemo {
                 setPrice(100).
                 setGender("MALE").
                 build();
-        dog.PrintDog();
 
 
     }

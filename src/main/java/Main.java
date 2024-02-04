@@ -1,14 +1,14 @@
-import Problems.PendencySystem.PendencyDemo;
-import Utilities.DemoUtil;
-import java.lang.instrument.Instrumentation;
+import Problems.TokenBucketRateLimiter.TokenBucketDemo;
 
 public class Main {
 
     public static void main(String[] args) {
-        int x = 2;
-        final int y = 2;
+
+        try {
+            new TokenBucketDemo().Demo();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
 
     }
-
-
 }

@@ -1,4 +1,4 @@
-package Problems;
+package Problems.TokenBucketRateLimiter;
 
 import java.util.concurrent.atomic.AtomicLong;
 
@@ -15,13 +15,16 @@ public class TokenBucketRateLimiter {
     public TokenBucketRateLimiter(long bucketCapacity, long refillRate) {
         this.bucketCapacity = bucketCapacity;
         this.refillRate = refillRate;
+        currentTokens = new AtomicLong(0);
     }
 
 
     private void refill() {
         long currentTime =  System.currentTimeMillis();
-        long tokenToAdd = (currentTime - lastRequestTime) * refillRate/1000;
-        currentTokens.set(Math.min(bucketCapacity, tokenToAdd + currentTokens.get()));
+        long tokenToAdd = (currentTime - lastRequestTime)*refillRate/(1000);
+        System.out.println(tokenToAdd);
+        long tokens = Math.min(bucketCapacity, tokenToAdd + currentTokens.get());
+        currentTokens.set(tokens);
         lastRequestTime = currentTime;
     }
 

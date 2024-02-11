@@ -1,4 +1,4 @@
-package Problems.DesignAtm.enums;
+package DesignPatterns.StateDesingPattern.DesignAtm.enums;
 
 public enum  Operations {
     WITHDRAW,

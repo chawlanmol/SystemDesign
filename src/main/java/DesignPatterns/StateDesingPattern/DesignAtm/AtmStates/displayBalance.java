@@ -1,7 +1,7 @@
-package Problems.DesignAtm.AtmStates;
+package DesignPatterns.StateDesingPattern.DesignAtm.AtmStates;
 
-import Problems.DesignAtm.ATM;
-import Problems.DesignAtm.BankCard;
+import DesignPatterns.StateDesingPattern.DesignAtm.ATM;
+import DesignPatterns.StateDesingPattern.DesignAtm.BankCard;
 
 public class displayBalance extends AtmStates {
 

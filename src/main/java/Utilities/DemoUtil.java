@@ -6,7 +6,7 @@ import DesignPatterns.Decorator.PizzaDecorator.DecoratorDemo;
 import DesignPatterns.ObserverPattern.ObserverStoreDemo;
 import DesignPatterns.ProxyDesignPattern.ProxyPatternDemo;
 import DesignPatterns.Stratergy.VehicleExample.VehicleDemo;
-import Problems.DesignAtm.AtmRoom;
+import DesignPatterns.StateDesingPattern.DesignAtm.AtmRoom;
 import Problems.DesignHashMap.HashMapDemo;
 import Problems.SnakeAndLadder.GameDemo;
 

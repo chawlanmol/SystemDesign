@@ -1,8 +1,8 @@
-package Problems.DesignAtm.AtmStates;
+package DesignPatterns.StateDesingPattern.DesignAtm.AtmStates;
 
-import Problems.DesignAtm.ATM;
-import Problems.DesignAtm.BankCard;
-import Problems.DesignAtm.enums.Operations;
+import DesignPatterns.StateDesingPattern.DesignAtm.ATM;
+import DesignPatterns.StateDesingPattern.DesignAtm.BankCard;
+import DesignPatterns.StateDesingPattern.DesignAtm.enums.Operations;
 
 public class selectOperationState extends AtmStates {
 

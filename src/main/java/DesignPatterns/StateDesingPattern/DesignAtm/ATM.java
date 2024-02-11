@@ -1,7 +1,7 @@
-package Problems.DesignAtm;
+package DesignPatterns.StateDesingPattern.DesignAtm;
 
-import Problems.DesignAtm.AtmStates.AtmStates;
-import Problems.DesignAtm.AtmStates.IdleState;
+import DesignPatterns.StateDesingPattern.DesignAtm.AtmStates.AtmStates;
+import DesignPatterns.StateDesingPattern.DesignAtm.AtmStates.IdleState;
 
 public class ATM {
 

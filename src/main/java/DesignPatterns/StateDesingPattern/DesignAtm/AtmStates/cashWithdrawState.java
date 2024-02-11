@@ -1,8 +1,8 @@
-package Problems.DesignAtm.AtmStates;
+package DesignPatterns.StateDesingPattern.DesignAtm.AtmStates;
 
-import Problems.DesignAtm.ATM;
-import Problems.DesignAtm.BankCard;
-import Problems.DesignAtm.BankingDetails;
+import DesignPatterns.StateDesingPattern.DesignAtm.ATM;
+import DesignPatterns.StateDesingPattern.DesignAtm.BankCard;
+import DesignPatterns.StateDesingPattern.DesignAtm.BankingDetails;
 
 
 
@@ -27,5 +27,4 @@ public class cashWithdrawState extends AtmStates{
         atm.printAtmStatus();
         System.out.println("Please collect your card");
     }
-
 }

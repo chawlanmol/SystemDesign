@@ -1,4 +1,4 @@
-package Problems.DesignAtm;
+package DesignPatterns.StateDesingPattern.DesignAtm;
 
 public class BankCard {
 

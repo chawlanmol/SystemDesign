@@ -1,6 +1,6 @@
-package Problems.DesignAtm;
+package DesignPatterns.StateDesingPattern.DesignAtm;
 
-import Problems.DesignAtm.enums.Operations;
+import DesignPatterns.StateDesingPattern.DesignAtm.enums.Operations;
 
 public class AtmRoom {
     private  ATM atm;

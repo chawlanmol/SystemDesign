@@ -46,7 +46,6 @@ public class LRUCache implements ICache {
     }
     private void deleteNode(DLLNode dllNode) {
         linkedList.deleteNode(dllNode);
-
     }
 
     private void addFront(DLLNode dllNode) {

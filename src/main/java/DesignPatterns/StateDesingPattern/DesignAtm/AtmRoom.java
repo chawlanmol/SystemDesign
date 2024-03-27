@@ -26,7 +26,4 @@ public class AtmRoom {
         card = new BankCard();
         card.setBankingDetails(bankingDetails);
     }
-
-
-
 }

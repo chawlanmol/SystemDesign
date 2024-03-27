@@ -6,7 +6,7 @@ import DesignPatterns.StateDesingPattern.DesignAtm.BankingDetails;
 
 
 
-public class cashWithdrawState extends AtmStates{
+public class cashWithdrawState extends AtmStates {
 
     @Override
     public void cashWithdraw(ATM atm, BankCard bankCard, Integer amount) {

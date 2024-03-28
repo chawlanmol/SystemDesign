@@ -11,6 +11,24 @@ import java.util.concurrent.ConcurrentHashMap;
  *
  * present in java.util
  */
+
+
+/**
+ * Main Interface Iteratable -> Collection -> [List , Set , Queue]
+ * List -> link List , ArrayList
+ *
+ * Set -> HashSet , TreeSet , LinkedhashSet
+ */
+
+/**
+ * Collection -> map (parent is not Iteratable)
+ *
+ * Map -> hashtabel , hashMap , LinkedhashMap
+ *
+ * HashMap
+ * HashTable is synchronised
+ * LinkedHashMap maintains the insertion order
+ */
 public class CollectionInJava {
 
     public void Demo() {
@@ -146,5 +164,25 @@ public class CollectionInJava {
         for(Integer a : set1) {
             System.out.println(a);
         }
+    }
+
+    Comparator<Integer> comparator = new Comparator<Integer>() {
+        @Override
+        public int compare(Integer o1, Integer o2) {
+            if(o1%10 < o2%10) return 1;
+            else return -1;
+        }
+    };
+
+
+    public void sortListUsingComparator() {
+
+
+        List<Integer> nums = Arrays.asList(1, 7 ,41 , 9 , 0 , -3);
+
+        Collections.sort(nums , comparator);
+
+        nums.forEach(a -> System.out.println(a));
+
     }
 }

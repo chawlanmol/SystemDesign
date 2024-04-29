@@ -1,5 +1,7 @@
 package CoreJava.Collections;
 
+import java.util.HashSet;
+
 public class LambdaExpressionDemo {
 
 
@@ -11,6 +13,8 @@ public class LambdaExpressionDemo {
         FunctionalInterface object2 = () -> {
             System.out.println("showing how to use the lambda expression");
         };
+        HashSet<Integer> hashSet = new HashSet<>();
+
 
         FunctionalInterface object3 = () -> System.out.println("showing use of lambda");
     }

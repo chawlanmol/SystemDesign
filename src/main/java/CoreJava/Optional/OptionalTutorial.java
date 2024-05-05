@@ -47,7 +47,7 @@ public class OptionalTutorial {
 
         Cat myCat = new Cat("Fred");
 
-        return Optional.empty();
+        return Optional.of(myCat);
     }
 
     /**

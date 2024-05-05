@@ -9,4 +9,8 @@ public interface FunctionalInterface {
 
     void show();
 
+    default void show(int a) {
+        System.out.println(a);
+    }
+
 }

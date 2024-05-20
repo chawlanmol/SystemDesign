@@ -60,7 +60,7 @@ public class OptionalTutorial {
         if(StringUtils.isNotEmpty(name)) {
              myCat = new Cat("Fred");
         }
-        // Optional . Of can not take a null value
+        // Optional Of can not take a null value
         // if value can be null then Optional.ofNullable
         return Optional.ofNullable(null);
     }

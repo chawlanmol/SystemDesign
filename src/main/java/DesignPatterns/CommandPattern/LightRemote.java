@@ -7,6 +7,10 @@ public class LightRemote {
     ICommand oncommand;
     ICommand offcommand;
 
+    ICommand volumeUpCommand;
+
+    ICommand volumeDownCommand;
+
     public LightRemote(ICommand oncommand , ICommand offcommand) {
         this.oncommand = oncommand;
         this.offcommand = offcommand;

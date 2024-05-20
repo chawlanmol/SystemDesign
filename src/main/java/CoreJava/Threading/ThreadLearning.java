@@ -1,6 +1,9 @@
 package CoreJava.Threading;
 
 
+import java.util.LinkedList;
+import java.util.List;
+
 /**
  * thread needs  object of runnable to initialize;
  * thread set priority does not guarantee priority
@@ -54,6 +57,10 @@ public class ThreadLearning {
 
         Thread thread1 = new Thread(() -> {monitorLockExample.task2();});
         thread1.start();
+
+        List<Integer> integerList = new LinkedList<>();
+        integerList.add(0);
+        System.out.println(integerList.get(1));
 
     }
 }

@@ -23,13 +23,7 @@ public class ThreadLearning {
 
 
     public void demo(){
-        ThreadA runnableThreadA = new ThreadA();
-        Thread thread1 = new Thread(runnableThreadA);
-
-        Thread thread2 = new Thread(runnableThreadA);
-
-
-        LearningMonitorLock();
+        creatingThreadByExtendingThreadClass();
     }
 
     public void creatingThreadByExtendingThreadClass() {
@@ -41,7 +35,6 @@ public class ThreadLearning {
         threadFromThreadClass1.setPriority(10);
 
         threadFromThreadClass3.setDaemon(true);
-
 
         threadFromThreadClass1.start();
 

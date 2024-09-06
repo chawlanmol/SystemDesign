@@ -10,6 +10,7 @@ import Problems.TokenBucketRateLimiter.TokenBucketDemo;
 public class Main {
 
     public static void main(String[] args) {
-        new User().Demo();
+        ThreadLearning threadLearning = new ThreadLearning();
+        threadLearning.demo();
     }
 }

@@ -1,6 +1,8 @@
 package CoreJava.Collections;
 
 
+import lombok.Getter;
+
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -45,22 +47,24 @@ public class CollectionInJava {
         List<Integer> integerList3 = new Vector<>();
      }
 
+     public class Student {
+        @Getter
+        Integer grade;
+
+        @Getter
+        String name;
+
+     }
+
     public void vectorDemo() {
+        List<Integer> elements = Arrays.asList(1 , 2 , 3);
+        elements.forEach(System.out::println);
 
-        Vector<Integer> v = new Vector<>();
+        Queue<Integer> queue = new LinkedList<>();
 
-        // read
-        v.add(1);
-
-        // write
-        v.get(0);
-
-        int a []  = new int[10];
-        a[0] = 0;
-
-        // get --> a[0]
-
-
+        PriorityQueue<Student> priorityQueue = new PriorityQueue<>(
+                (Student a , Student b) ->  (b.getName().compareTo(a.getName()))
+        );
 
     }
 

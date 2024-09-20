@@ -7,16 +7,23 @@ import java.util.concurrent.DelayQueue;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Every task in the delay queue must implement Delay interface
- *
+ * Learning
+ * 1. Delay queue only takes task which implement delay type
+ * 2. Delay Task need to implement compare to Method.
+ * 3. So it can Compare between two task
+ * 4. it also initialze a startTime
+ * 5. time at which task must be executed
+ * 6. Its also need to execute a delayMethod
+ * 7. which can check the difference b/w task start time and currentTime.
  */
+
 public class DelayQueueExample {
 
 
     public void Demo() throws InterruptedException {
         DelayQueue<DelayTask> delayQ = new DelayQueue<>();
-        DelayTask task1 = new DelayTask("task1" , 10 , TimeUnit.SECONDS);
-        DelayTask task2 = new DelayTask("task2" , 5 , TimeUnit.SECONDS);
+        DelayTask task1 = new DelayTask("task1" , 10000);
+        DelayTask task2 = new DelayTask("task2" , 5000);
 
         delayQ.put(task2);
         delayQ.put(task1);
@@ -33,3 +40,14 @@ public class DelayQueueExample {
 
     }
 }
+
+/**
+ * Learning
+ * 1. Delay queue only takes task which implement delay type
+ * 2. Delay Task need to implement compare to Method.
+ * 3. So it can Compare between two task
+ * 4. it also initialze a startTime
+ * 5. time at which task must be executed
+ * 6. Its also need to execute a delayMethod
+ * 7. which can check the difference b/w task start time and currentTime.
+ */

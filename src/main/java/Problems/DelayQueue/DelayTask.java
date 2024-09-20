@@ -2,7 +2,6 @@ package Problems.DelayQueue;
 
 import lombok.Data;
 
-import java.util.Objects;
 import java.util.concurrent.Delayed;
 import java.util.concurrent.TimeUnit;
 
@@ -13,14 +12,13 @@ public class DelayTask implements Delayed {
 
     private long startTime;
 
-    public DelayTask(String taskName, long delay, TimeUnit unit) {
-        this.startTime = System.currentTimeMillis() + TimeUnit.MILLISECONDS.convert(delay, unit);
+    public DelayTask(String taskName, long delay) {
+        this.startTime = System.currentTimeMillis() + delay;
         this.taskName = taskName;
     }
     @Override
     public long getDelay(TimeUnit unit) {
-        long delay = startTime - System.currentTimeMillis();
-        return unit.convert(delay, TimeUnit.MILLISECONDS);
+        return startTime - System.currentTimeMillis();
     }
 
     @Override

@@ -1,16 +1,11 @@
-import CoreJava.Collections.CollectionInJava;
-import CoreJava.Collections.Comperator.ComperatorDemo;
-import CoreJava.Collections.StreamAPI;
-import CoreJava.Threading.ThreadLearning;
-import DesignPatterns.ChainOfResponsibility.AlternateImplementaiton.LogProcessorDemo;
-import DesignPatterns.CommandPattern.User;
-import DesignPatterns.prototype.ShapeFactoryDemo;
-import Problems.TokenBucketRateLimiter.TokenBucketDemo;
+
+import Problems.DelayQueue.DelayQueueExample;
+import Problems.ProducerConsumer.ProducerConsumerDemo;
 
 public class Main {
 
-    public static void main(String[] args) {
-        ThreadLearning threadLearning = new ThreadLearning();
-        threadLearning.demo();
+    public static void main(String[] args) throws InterruptedException {
+        DelayQueueExample delayQueueExample = new DelayQueueExample();
+        delayQueueExample.Demo();
     }
 }

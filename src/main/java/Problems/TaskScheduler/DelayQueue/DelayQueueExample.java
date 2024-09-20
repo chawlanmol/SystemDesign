@@ -1,10 +1,9 @@
-package Problems.DelayQueue;
+package Problems.TaskScheduler.DelayQueue;
 
 // every task in the delay queue must implement DELAY interface
 
 import java.util.Date;
 import java.util.concurrent.DelayQueue;
-import java.util.concurrent.TimeUnit;
 
 /**
  * Learning

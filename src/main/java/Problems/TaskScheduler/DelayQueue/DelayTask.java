@@ -1,4 +1,4 @@
-package Problems.DelayQueue;
+package Problems.TaskScheduler.DelayQueue;
 
 import lombok.Data;
 

@@ -1,6 +1,5 @@
 
-import Problems.DelayQueue.DelayQueueExample;
-import Problems.ProducerConsumer.ProducerConsumerDemo;
+import Problems.TaskScheduler.DelayQueue.DelayQueueExample;
 
 public class Main {
 
